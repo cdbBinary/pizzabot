@@ -21,7 +21,7 @@ module Direction
     direction_string
   end
 
-  def return_delivery_directions(command)
+  def return_delivery_instructions(command)
     grid_size_array = command.scan(/\d\w\d/).first.split("x")
     starting_location = Coordinate.new("0, 0")
     coordinates = format_coordinates(command)
@@ -34,7 +34,7 @@ module Direction
         starting_location.x_axis = target_location.x_axis
         starting_location.y_axis = target_location.y_axis
       else
-        puts "I'm sorry, those coordinates are outside my delievery zone. Please increase my zone."
+        raise ArgumentError, "I'm sorry, those coordinates are outside my delievery zone. Please increase my zone."
       end
       directions
     end

@@ -11,9 +11,16 @@ describe Direction do
   end
 
   describe "return_delivery_directions" do
-    it "returns directions" do
-      directions = return_delivery_directions("5x5 (0, 0) (1, 3) (4, 4) (4, 2) (4, 2) (0, 1) (3, 2) (2, 3) (4, 1)")
-      expect(directions.join).to eq("DENNNDEEENDSSDDWWWWSDEEENDWNDEESSD")
+    context "within 'delievery zone'" do
+      it "returns sequence of axis directions" do
+        directions = return_delivery_instructions("5x5 (0, 0) (1, 3) (4, 4) (4, 2) (4, 2) (0, 1) (3, 2) (2, 3) (4, 1)")
+        expect(directions.join).to eq("DENNNDEEENDSSDDWWWWSDEEENDWNDEESSD")
+      end
+    end
+    context "outside 'delievery zone'" do
+      it "should raise ArgumentError for coordinates greater than grid size" do
+        expect{return_delivery_instructions("5x5 (1, 7)")}.to raise_error(ArgumentError)
+      end
     end
   end
 
