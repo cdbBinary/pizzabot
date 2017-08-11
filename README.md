@@ -1,4 +1,4 @@
-https://travis-ci.org/DeweyBanks/pizzabot.svg?branch=master
+[![Build Status](https://travis-ci.org/DeweyBanks/pizzabot.svg?branch=updated)](https://travis-ci.org/DeweyBanks/pizzabot)
 [![Coverage Status](https://coveralls.io/repos/github/DeweyBanks/pizzabot/badge.svg?branch=master)](https://coveralls.io/github/DeweyBanks/pizzabot?branch=master)
 
 
