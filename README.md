@@ -17,6 +17,7 @@ A Ruby app that gives directions and drops off pizzas.
 
 
 # This branch has been updated based on the feedback I got.
+check the master branch for original submission.
 
 - method names could be improved
 - failed to use errors to stop execution
