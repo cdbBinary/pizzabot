@@ -1,3 +1,7 @@
+https://travis-ci.org/DeweyBanks/pizzabot.svg?branch=master
+[![Coverage Status](https://coveralls.io/repos/github/DeweyBanks/pizzabot/badge.svg?branch=master)](https://coveralls.io/github/DeweyBanks/pizzabot?branch=master)
+
+
 # Welcome to Pizzabot!
 A Ruby app that gives directions and drops off pizzas.
 
