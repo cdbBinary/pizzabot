@@ -8,16 +8,8 @@ module Direction
 
   def axis_directions(target_location, starting_location)
     direction_string = ""
-    if target_location.x_axis >= starting_location.x_axis
-      (target_location.x_axis - starting_location.x_axis).times { direction_string << "E" }
-    else
-      (starting_location.x_axis - target_location.x_axis).times { direction_string << "W" }
-    end
-    if target_location.y_axis >= starting_location.y_axis
-      (target_location.y_axis - starting_location.y_axis).times { direction_string << "N" }
-    else
-      (starting_location.y_axis - target_location.y_axis).times { direction_string << "S" }
-    end
+    target_location.x_direction(starting_location, direction_string)
+    target_location.y_direction(starting_location, direction_string)
     direction_string
   end
 
