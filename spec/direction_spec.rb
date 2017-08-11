@@ -2,6 +2,7 @@ require 'spec_helper'
 require_relative '../lib/direction'
 include Direction
 
+
 describe Direction do
   describe "format_coordinates" do
     it "removes parentheses and returns an array" do
