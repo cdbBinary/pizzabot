@@ -12,7 +12,10 @@ A Ruby app that gives directions and drops off pizzas.
     $ rspec
 
 
-#Pizzabot was coding challenge the instructions were:
+# Pizzabot was coding challenge the instructions were:
+  check updated branch for code improvements based on feedback
+
+
 
 Rubric
 
