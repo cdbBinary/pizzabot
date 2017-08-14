@@ -12,21 +12,15 @@ class Coordinate
     @x_axis > x_length || @y_axis > y_length ? false : true
   end
 
-  def x_direction(starting_location, direction_string)
-    if @x_axis >= starting_location.x_axis
-      (@x_axis - starting_location.x_axis).times { direction_string << "E" }
-    else
-      (starting_location.x_axis - @x_axis).times { direction_string << "W" }
-    end
-    direction_string
+  def insert_x_direction(starting_location, direction_string)
+    @x_axis >= starting_location.x_axis ?
+    (@x_axis - starting_location.x_axis).times { direction_string << "E" } :
+    (starting_location.x_axis - @x_axis).times { direction_string << "W" }
   end
 
-  def y_direction(starting_location, direction_string)
-    if @y_axis >= starting_location.y_axis
-      (@y_axis - starting_location.y_axis).times { direction_string << "N" }
-    else
-      (starting_location.y_axis - @y_axis).times { direction_string << "S" }
-    end
-    direction_string
+  def insert_y_direction(starting_location, direction_string)
+    @y_axis >= starting_location.y_axis ?
+    (@y_axis - starting_location.y_axis).times { direction_string << "N" } :
+    (starting_location.y_axis - @y_axis).times { direction_string << "S" }
   end
 end

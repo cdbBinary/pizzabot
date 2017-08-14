@@ -8,8 +8,8 @@ module Direction
 
   def axis_directions(target_location, starting_location)
     direction_string = ""
-    target_location.x_direction(starting_location, direction_string)
-    target_location.y_direction(starting_location, direction_string)
+    target_location.insert_x_direction(starting_location, direction_string)
+    target_location.insert_y_direction(starting_location, direction_string)
     direction_string
   end
 
