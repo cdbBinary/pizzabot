@@ -6,6 +6,7 @@
 A Ruby app that gives directions and drops off pizzas.
 
 ## To Use
+  - download or clone repo
   - navigate to root of project
   - $ bundle install
   - format grid size and target locations into a string
