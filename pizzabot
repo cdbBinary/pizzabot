@@ -3,4 +3,4 @@ require_relative 'lib/direction.rb'
 include Direction
 
 command = ARGV[0]
-puts return_delivery_directions(command).join
+puts return_delivery_instructions(command).join
