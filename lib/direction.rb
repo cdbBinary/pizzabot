@@ -17,7 +17,7 @@ module Direction
     grid_size_array = command.scan(/\d\w\d/).first.split("x")
     starting_location = Coordinate.new("0, 0")
     coordinates = format_coordinates(command)
-    output = coordinates.map do |coord|
+    coordinates.map do |coord|
       directions = []
       target_location = Coordinate.new(coord)
       if target_location.valid?(grid_size_array)
@@ -30,6 +30,5 @@ module Direction
       end
       directions
     end
-    output
   end
 end
