@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/DeweyBanks/pizzabot.svg?branch=updated)](https://travis-ci.org/DeweyBanks/pizzabot)
 [![Coverage Status](https://coveralls.io/repos/github/DeweyBanks/pizzabot/badge.svg?branch=updated)](https://coveralls.io/github/DeweyBanks/pizzabot?branch=updated)
+[![Test Coverage](https://codeclimate.com/github/codeclimate/codeclimate/badges/coverage.svg)](https://codeclimate.com/github/DeweyBanks/pizzabot/coverage)
 [![codebeat badge](https://codebeat.co/badges/9d19d76b-d5d0-4fcf-80aa-52eac85c2913)](https://codebeat.co/projects/github-com-deweybanks-pizzabot-updated)
 
 # Welcome to Pizzabot!

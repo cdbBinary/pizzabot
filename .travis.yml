@@ -1,6 +1,10 @@
 language: ruby
 rvm:
  - 2.3.3
+env:
+  global:
+    CODECLIMATE_API_HOST=https://codebeat.co/webhooks/code_coverage\
+    CODECLIMATE_REPO_TOKEN=9d19d76b-d5d0-4fcf-80aa-52eac85c2913
 script:
 - bundle exec rspec
 

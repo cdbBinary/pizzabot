@@ -1,6 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    codeclimate-test-reporter (1.0.7)
+      simplecov
     codecov (0.1.10)
       json
       simplecov
@@ -42,6 +44,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  codeclimate-test-reporter
   codecov
   coveralls
   rspec
