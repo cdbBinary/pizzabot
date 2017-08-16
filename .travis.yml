@@ -1,12 +1,6 @@
 language: ruby
 rvm:
  - 2.3.3
-env:
- global:
-    - CC_TEST_REPORTER_ID=fbbc267d37d424bab7e6b704f3affa397fd60cadf222fe3db1577203f8f48844
-before_script:
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-darwin-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
 script:
 - bundle exec rspec
-- ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+
