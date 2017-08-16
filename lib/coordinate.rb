@@ -23,4 +23,7 @@ class Coordinate
     (@y_axis - starting_location.y_axis).times { direction_string << "N" } :
     (starting_location.y_axis - @y_axis).times { direction_string << "S" }
   end
+
+  def insert_direction()
+  end
 end
