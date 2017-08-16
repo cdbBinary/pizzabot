@@ -9,3 +9,4 @@ before_script:
   - chmod +x ./cc-test-reporter
 script:
 - bundle exec rspec
+- ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
