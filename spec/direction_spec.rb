@@ -14,7 +14,9 @@ describe Direction do
   describe "return_delivery_directions" do
     context "within 'delievery zone'" do
       it "returns sequence of axis directions" do
-        directions = return_delivery_instructions("5x5 (0, 0) (1, 3) (4, 4) (4, 2) (4, 2) (0, 1) (3, 2) (2, 3) (4, 1)")
+        grid_size_array = ["5", "5"]
+        coordinates = ["0,0", "1,3", "4,4", "4,2", "4,2", "0,1", "3,2", "2,3", "4,1"]
+        directions = return_delivery_instructions(coordinates, grid_size_array)
         expect(directions.join).to eq("DENNNDEEENDSSDDWWWWSDEEENDWNDEESSD")
       end
     end

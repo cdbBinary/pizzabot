@@ -3,4 +3,6 @@ require_relative 'lib/direction.rb'
 include Direction
 
 command = ARGV[0]
-puts return_delivery_instructions(command).join
+grid_size_array = command.scan(/\d\w\d/).first.split("x")
+coordinates = format_coordinates(command)
+puts return_delivery_instructions(coordinates, grid_size_array).join

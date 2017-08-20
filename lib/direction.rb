@@ -13,10 +13,8 @@ module Direction
     direction_string
   end
 
-  def return_delivery_instructions(command)
-    grid_size_array = command.scan(/\d\w\d/).first.split("x")
+  def return_delivery_instructions(coordinates, grid_size_array)
     starting_location = Coordinate.new("0, 0")
-    coordinates = format_coordinates(command)
     coordinates.map do |coord|
       directions = []
       target_location = Coordinate.new(coord)
