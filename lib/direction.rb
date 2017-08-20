@@ -20,14 +20,11 @@ module Direction
     coordinates.map do |coord|
       directions = []
       target_location = Coordinate.new(coord)
-      if target_location.valid?(grid_size_array)
+      raise ArgumentError, "Invalid Grid Size" unless target_location.valid?(grid_size_array)
         directions << axis_directions(target_location, starting_location)
         directions << "D"
         starting_location.x_axis = target_location.x_axis
         starting_location.y_axis = target_location.y_axis
-      else
-        raise ArgumentError, "I'm sorry, those coordinates are outside my delievery zone. Please increase my zone."
-      end
       directions
     end
   end
