@@ -5,4 +5,4 @@ include Direction
 command = ARGV[0]
 grid_size_array = command.scan(/\d\w\d/).first.split("x")
 coordinates = format_coordinates(command)
-puts return_delivery_instructions(coordinates, grid_size_array).join
+puts delivery_instructions(coordinates, grid_size_array).join

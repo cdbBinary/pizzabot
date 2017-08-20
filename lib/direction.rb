@@ -13,7 +13,7 @@ module Direction
     direction_string
   end
 
-  def return_delivery_instructions(coordinates, grid_size_array)
+  def delivery_instructions(coordinates, grid_size_array)
     starting_location = Coordinate.new("0, 0")
     coordinates.map do |coord|
       directions = []
