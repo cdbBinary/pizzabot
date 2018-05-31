@@ -23,5 +23,5 @@ Instruct Pizzabot on how to deliver pizzas to all the houses in a neighborhood. 
 
 Pizzabot always starts at the origin point, (0, 0). As with a Cartesian plane, this point lies at the most south-westerly point of the grid. Therefore, given the following input: $ ./pizzabot "5x5 (1, 3) (4, 4)" one correct solution would be: ENNNDEEEND
 
-In other words: move east once and north thrice; drop a pizza; move east thrice and north once; drop a final pizza. If you'd prefer to avoid stdin, or work predominantly in a platform that makes it difficult to use, the equivalent solution expressed as an integration test is just fine. The API is entirely up to you, as long as the test exercises functionality that accepts and returns properly formatted strings: assertEqual(pizzabot("5x5 (1, 3) (4, 4)"), "ENNNDEEEND")
+In other words: move east once and north thrice; drop a pizza; move east thrice and north once; drop a final pizza. 
 
